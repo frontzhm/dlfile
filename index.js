@@ -22,6 +22,12 @@ const downloadSingle = (url, dir = __dirname, title) => {
       console.log('已完成')
     })
 }
+const process = require('process')
+console.log(process.argv)
+console.log(process.argv.slice(2))
+process.argv.slice(2).length && downloadSingle(...process.argv.slice(2))
 
-const url = 'https://article-fd.zol-img.com.cn/t_s640x2000/g1/M03/02/02/ChMljl2ENKuIV553AAKEYP9wZOQAAP23wGEctEAAoR4006.jpg'
-downloadSingle(url, __dirname, 'demo.png')
+// const url = 'https://article-fd.zol-img.com.cn/t_s640x2000/g1/M03/02/02/ChMljl2ENKuIV553AAKEYP9wZOQAAP23wGEctEAAoR4006.jpg'
+// downloadSingle(url)
+// downloadSingle(url, __dirname, 'demo.png')
+module.exports = downloadSingle
