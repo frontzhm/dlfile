@@ -7,8 +7,16 @@ const process = require('process')
 // 根据文件的url地址得到后缀，就是.jpg .mp3 .mp4之类的
 const getSuffix = (str) =>
   str.slice(~str.lastIndexOf('.') ? str.lastIndexOf('.') : 0)
+console.log(222, process.cwd())
 
 const downloadSingle = (url, dir = process.cwd(), title) => {
+  if (!url) {
+    console.error('请增加url')
+    return
+  }
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir)
+  }
   if (!title) {
     // title没传的话，默认是url最后一个路径
     title = url.slice(url.lastIndexOf('/') + 1)
