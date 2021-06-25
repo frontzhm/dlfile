@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "dlfile":"./index.js"
+    "dlfile": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
