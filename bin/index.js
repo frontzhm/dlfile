@@ -32,11 +32,11 @@ const downloadSingle = (url, dir = process.cwd(), title) => {
     })
 }
 
-// var argv = require('minimist')(process.argv.slice(2))
-// console.log(argv._)
-// argv._.length && downloadSingle(...argv._)
+var argv = require('minimist')(process.argv.slice(2))
+console.log(argv._)
+argv._.length && downloadSingle(...argv._)
 
 // const url = 'https://article-fd.zol-img.com.cn/t_s640x2000/g1/M03/02/02/ChMljl2ENKuIV553AAKEYP9wZOQAAP23wGEctEAAoR4006.jpg'
 // downloadSingle(url)
 // downloadSingle(url, __dirname, 'demo.png')
-module.exports = downloadSingle
+// module.exports = downloadSingle
