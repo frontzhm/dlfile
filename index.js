@@ -7,7 +7,6 @@ const process = require('process')
 // 根据文件的url地址得到后缀，就是.jpg .mp3 .mp4之类的
 const getSuffix = (str) =>
   str.slice(~str.lastIndexOf('.') ? str.lastIndexOf('.') : 0)
-console.log(222, process.cwd())
 
 const downloadSingle = (url, dir = process.cwd(), title) => {
   if (!url) {
