@@ -1,6 +1,9 @@
-# Dlfile can download any file with url.
+# Dlfile can download any file with url
 
-可以在任意路径下，运行命令下载任意一个资源。
+It can download any file with url.
+It can custom dir or filename.
+
+可以在任意路径下，运行命令下载任意一个资源，可以自定义资源放在哪个目录里，也可以自定义文件名。
 
 ## Installation
 
