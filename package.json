@@ -10,10 +10,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "frontzhm",
   "license": "ISC",
   "dependencies": {
     "minimist": "^1.2.5",
     "request": "^2.88.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:frontzhm/dlfile.git"
+  },
+  "homepage": "https://github.com/frontzhm/dlfile"
 }
