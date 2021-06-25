@@ -21,25 +21,7 @@ const downloadSingle = (url, dir = __dirname, title) => {
     .on('close', () => {
       console.log('已完成')
     })
-
-  // request.head(url, (err, res, body) => {
-  //   if (err) {
-  //     console.log(err)
-  //     return
-  //   }
-  //   url &&
-
-  // })
 }
 
 const url = 'https://article-fd.zol-img.com.cn/t_s640x2000/g1/M03/02/02/ChMljl2ENKuIV553AAKEYP9wZOQAAP23wGEctEAAoR4006.jpg'
-downloadSingle(url)
-
-// const downloadFile = () => {
-//   let fileName = `${item[titleKey]}${getSuffix(item[urlKey])}`
-//   let filePath = `${localDirPath}/${fileName}`
-//   downloadSingle(item[urlKey], filePath, (err, data) =>
-//     err ? console.log(err) : console.log(path.resolve(data))
-//   )
-//   callback && callback(null, item)
-// }
+downloadSingle(url, __dirname, 'demo.png')
