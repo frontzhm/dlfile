@@ -26,6 +26,8 @@ $ dlfile url dir
 $ dlfile url dir filename
 ```
 
+filename also can have no suffix.
+
 ## require
 
 It also can support function to download file.
