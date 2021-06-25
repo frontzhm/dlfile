@@ -16,13 +16,13 @@ npm install dlfile -g
 ## Execution
 
 ```sh
-// with url
+// with url  eg: dlfile https://blog-huahua.oss-cn-beijing.aliyuncs.com/blog/code/thank_you.png
 $ dlfile url
 
-// or with dir
+// or with dir eg:dlfile https://blog-huahua.oss-cn-beijing.aliyuncs.com/blog/code/thank_you.png ./img
 $ dlfile url dir
 
-// or with filename
+// or with filename eg:dlfile https://blog-huahua.oss-cn-beijing.aliyuncs.com/blog/code/thank_you.png ./img demo.png
 $ dlfile url dir filename
 ```
 
